@@ -7,7 +7,8 @@ node {
     def dockerImage
     // ip address of the docker private repository(nexus)
     
-    def dockerRepoUrl = "localhost:8083"
+   // def dockerRepoUrl = "localhost:8083"
+    def dockerRepoUrl = "localhost:5000"
     def dockerImageName = "hello-world-java"
     def dockerImageTag = "${dockerRepoUrl}/${dockerImageName}:${env.BUILD_NUMBER}"
     
